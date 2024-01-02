@@ -10,6 +10,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
+/*Import des fonts*/
+
+@font-face {
+    font-family: 'Outfit-Regular';
+    src: url('../fonts/Outfit-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit-Medium';
+    src: url('../fonts/Outfit-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit-SemiBold';
+    src: url('../fonts/Outfit-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit-Bold';
+    src: url('../fonts/Outfit-Bold.ttf');
+}
 
 body{
 	font-size: 16px;
@@ -84,7 +105,7 @@ a:focus{
     width: 30px;
     height: 30px;
     border-radius: 2px;
-    background: #3854F2;
+    background: #4A49FB;
     -webkit-transform: translateY(0) rotate(45deg) scale(0);
     transform: translateY(0) rotate(45deg) scale(0);
     -webkit-animation: diamonds 1500ms linear infinite;
@@ -175,12 +196,12 @@ a:focus{
   }
    
   ::-webkit-scrollbar-thumb {
-	background: #3854F2; 
+	background: #4A49FB; 
 	border-radius: 10px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-	background: #9D93FB; 
+	background: #5e5ef2; 
   }
 
 
@@ -195,18 +216,12 @@ header .navbar{
 	background: rgba(0,0,0,0.4);
 	z-index: 40;
 	transition: all 0.3s;
+	font-family: 'Outfit-Regular';
 }
 
-.navbar-brand h1{
-	font-family: 'Berkshire Swash', cursive;
-	font-weight: normal;
+.navbar-brand h1 img{
+	width: 75px;
 	transition: all 0.3s;
-	color: #fff;
-	margin: 0;
-}
-
-.navbar-brand h1 span{
-	color: #9D93FB
 }
 
 header .navbar-collapse.collapse{
@@ -233,7 +248,7 @@ header .navbar-collapse.collapse{
 
 .navbar .navbar-nav .nav-link.active{
 	background: none;
-	color: #9D93FB;
+	color: #4A49FB;
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -243,7 +258,7 @@ header .navbar-collapse.collapse{
 
 .navbar .navbar-nav .nav-link.active:hover,
 .navbar .navbar-nav .nav-link.active:focus{
-	color: #9D93FB;
+	color: #4A49FB;
 }
 
 header .navbar.sticky-header{
@@ -300,7 +315,7 @@ header .navbar.sticky-header{
 
 .slicknav_nav a:hover{
 	background: none;
-	color: #ff5d56;
+	color: #4A49FB;
 }
 
 /************************************/
@@ -322,7 +337,7 @@ header .navbar.sticky-header{
 	font-weight: 300;
 	color: #fff;
 	line-height: 2.3em;
-	margin-bottom: 1.5em;
+	margin-bottom: 1.6em;
 	letter-spacing: 0.04em;
 }
 
@@ -337,16 +352,32 @@ header .navbar.sticky-header{
 	font-weight: 300;
 }
 
+.banner-content h2 .before-heading{
+	font-family: 'Outfit-Regular';
+}
+
+.banner-content h2 .cd-words-wrapper b{
+	text-transform: uppercase;
+	font-family: 'Outfit-Bold';
+	background: linear-gradient(267deg, #4A49FB 5.6%, #54B9DC 93.02%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 .banner-content p{
 	color: #707070;
 	font-size: 20px;
 	font-weight: 300;
 	margin-bottom: 1.5em;
+	font-family: 'Outfit-Regular';
 }
 
 .btn-download{
+	font-family: 'Outfit-Regular';
 	display: inline-block;
-	border: 2px solid #fff;
+	background: #4A49FB;
 	padding: 14px 30px;
 	border-radius: 4px;
 	color: #fff;
@@ -354,8 +385,8 @@ header .navbar.sticky-header{
 }
 
 .btn-download:hover{
-	border-color: #3854F2;
-	color: #3854F2;
+	color: #fff;
+	box-shadow: 4px 4px 0px 0px #FFF;
 }
 
 /**************************************/
@@ -382,19 +413,19 @@ header .navbar.sticky-header{
 	position: absolute;
 	bottom: 0;
 	left: 50%;
-	border-bottom: 10px dotted #9D93FB;
+	border-bottom: 10px dotted #54B9DC;
 }
 
 .section-title h2{
-	color: #3854F2;
-	font-family: 'Inter', sans-serif;
+	color: #4A49FB;
+	font-family: 'Outfit-SemiBold';
 	font-weight: normal;
 	font-size: 36px;
 }
 
 .section-title p{
 	color: #707070;
-	
+	font-family: 'Outfit-Regular';
 }
 
 .about-image{
@@ -420,6 +451,7 @@ header .navbar.sticky-header{
 }
 
 .about-content h3{
+	font-family: 'Outfit-Medium';
 	color: #fff;
 	font-weight: 400;
 	font-size: 26px;
@@ -433,7 +465,7 @@ header .navbar.sticky-header{
 	display: block;
 	width: 40px;
 	height: 4px;
-	background: #3854F2;
+	background: #4A49FB;
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -442,6 +474,7 @@ header .navbar.sticky-header{
 .about-content p{
 	line-height: 1.6em;
 	margin-bottom: 1.6em;
+	font-family: 'Outfit-Regular';
 }
 
 .about-content ul{
@@ -457,6 +490,7 @@ header .navbar.sticky-header{
 }
 
 .about-content ul li{
+	font-family: 'Outfit-Regular';
 	float: left;
 	width: 48%;
 	padding: 4px 0 4px 36px;
@@ -466,11 +500,11 @@ header .navbar.sticky-header{
 
 .about-content ul li b,
 .about-content ul li strong{
-	font-weight: 600;
+	font-family: 'Outfit-SemiBold';
 }
 
 .about-content ul li i{
-	color: #9D93FB;
+	color: #54B9DC;
 	font-size: 20px;
 	position: absolute;
 	top: 0;
@@ -504,8 +538,8 @@ header .navbar.sticky-header{
 	left: -1px;
 	right: -1px;
 	bottom: -1px;
-	border-top: 1px solid #3854F2;
-	border-bottom: 1px solid #3854F2;
+	border-top: 1px solid #4A49FB;
+	border-bottom: 1px solid #4A49FB;
 	transform: scale(0,1);
 	transition: all 0.6s;
 }
@@ -518,8 +552,8 @@ header .navbar.sticky-header{
 	left: -1px;
 	right: -1px;
 	bottom: -1px;
-	border-left: 1px solid #3854F2;
-	border-right: 1px solid #3854F2;
+	border-left: 1px solid #4A49FB;
+	border-right: 1px solid #4A49FB;
 	transform: scale(1,0);
 	transition: all 0.6s;
 }
@@ -530,13 +564,14 @@ header .navbar.sticky-header{
 }
 
 .service-single .icon-box{
-	color: #9D93FB;
+	color: #54B9DC;
 	font-size: 60px;
 	line-height: 1em;
 	margin-bottom: 26px;
 }
 
 .service-single h3{
+	font-family: 'Outfit-Regular';
 	font-size: 20px;
 	font-weight: 400;
 	color: #fff;
@@ -544,6 +579,7 @@ header .navbar.sticky-header{
 }
 
 .service-single p{
+	font-family: 'Outfit-Regular';
 	margin-bottom: 0;
 }
 
@@ -557,6 +593,7 @@ header .navbar.sticky-header{
 }
 
 .sub-title{
+	font-family: 'Outfit-Regular';
 	display: inline-block;
 	color: #fff;
 	font-size: 18px;
@@ -592,18 +629,19 @@ header .navbar.sticky-header{
 }
 
 .experience-single h5{
+	font-family: 'Outfit-Regular';
 	color: #9D93FB;
-	font-weight: 400;
 }
 
 .experience-single h4{
+	font-family: 'Outfit-Regular';
 	color: #fff;
-	font-weight: 400;
 	font-size: 20px;
 	margin-bottom: 20px;
 }
 
 .experience-single p{
+	font-family: 'Outfit-Regular';
 	margin: 0;
 	line-height: 1.6em;
 }
@@ -662,12 +700,14 @@ header .navbar.sticky-header{
 	border: 1px solid #333;
 	margin: 0 4px;
 	transition: all 0.4s;
+	font-family: 'Outfit-Regular';
 }
 
 .portfolio-nav ul li a.active-portfolio{
 	background: #3854F2;
 	color: #fff;
 	border-color: #3854F2;
+	font-family: 'Outfit-Regular';
 }
 
 .single-portfolio{
@@ -687,18 +727,18 @@ header .navbar.sticky-header{
 }
 
 .single-portfolio-overlay h2{
+	font-family: 'Outfit-SemiBold';
 	color: #fff;
 	font-size: 22px;
-	font-weight: 500;
 	margin-top: 20px;
 	opacity: 0;
 	transition: all 0.8s;
 }
 
 .single-portfolio-overlay h3{
-	font-weight: 400;
+	font-family: 'Outfit-Regular';
 	font-size: 16px;
-	color: #9D93FB;
+	color: #54B9DC;
 	opacity: 0;
 	transition: all 0.8s;
 }
@@ -734,24 +774,26 @@ header .navbar.sticky-header{
 }
 
 .mfp-content .content .desc h4{
+	font-family: 'Outfit-Regular';
 	font-size: 20px;
 	color: #fff;
-	font-weight: 400;
 }
 
 .mfp-content .content .desc h5{
+	font-family: 'Outfit-Regular';
 	font-size: 16px;
-	color: #9D93FB;
-	font-weight: 400;
+	color: #54B9DC;
 	margin-bottom: 20px;
 }
 
 .mfp-content .content .desc p{
+	font-family: 'Outfit-Regular';
 	line-height: 1.6em;
 	margin-bottom: 1.6em;
 }
 
 .btn-view-project{
+	font-family: 'Outfit-Regular';
 	display: inline-block;
 	font-size: 16px;
 	background: #333;
@@ -762,8 +804,8 @@ header .navbar.sticky-header{
 }
 
 .btn-view-project:hover{
-	border-color: #9D93FB;
-	color: #9D93FB;
+	border-color: #54B9DC;
+	color: #54B9DC;
 	background: none;
 }
 
@@ -803,21 +845,6 @@ header .navbar.sticky-header{
 	padding: 4px;
 }
 
-/***************************************/
-/*****     Our Team Section css     ****/
-/***************************************/
-
-
-/*******************************************/
-/*****      Testimonial Section css     ****/
-/*******************************************/
-
-
-/*******************************************/
-/*****      Newsletter Section css      ****/
-/*******************************************/
-
-
 /************************************/
 /*****       Contact us css      ****/
 /************************************/
@@ -827,6 +854,7 @@ header .navbar.sticky-header{
 }
 
 .contact-form .form-control{
+	font-family: 'Outfit-Regular';
 	background: #222;
 	border: none;
 	border-radius: 0;
@@ -841,10 +869,12 @@ header .navbar.sticky-header{
 }
 
 .btn-contact{
+	font-family: 'Outfit-Regular';
 	background: none;
 	display: inline-block;
-    border: 1px solid #3854F2;
-    color: #3854F2;
+	border: 0;
+    background: #4A49FB;
+    color: #fff;
     padding: 12px 30px;
 	cursor: pointer;
 	margin-top: 20px;
@@ -852,7 +882,7 @@ header .navbar.sticky-header{
 }
 
 .btn-contact:hover{
-	background: #3854F2;
+	box-shadow: 4px 4px 0px 0px #FFF;
 	color: #fff;
 }
 
@@ -881,8 +911,8 @@ header .navbar.sticky-header{
     left: -1px;
     right: -1px;
     bottom: -1px;
-    border-top: 1px solid #3854F2;
-    border-bottom: 1px solid #3854F2;
+    border-top: 1px solid #4A49FB;
+    border-bottom: 1px solid #4A49FB;
     transform: scale(0,1);
     transition: all 0.6s;
 }
@@ -895,8 +925,8 @@ header .navbar.sticky-header{
     left: -1px;
     right: -1px;
     bottom: -1px;
-    border-left: 1px solid #3854F2;
-    border-right: 1px solid #3854F2;
+    border-left: 1px solid #4A49FB;
+    border-right: 1px solid #4A49FB;
     transform: scale(1,0);
     transition: all 0.6s;
 }
@@ -907,6 +937,7 @@ header .navbar.sticky-header{
 }
 
 .contact-info-single h3{
+	font-family: 'Outfit-SemiBold';
 	font-size: 20px;
 	font-weight: 400;
 	color: #fff;
@@ -922,13 +953,14 @@ header .navbar.sticky-header{
 	width: 40px;
 	margin-left: -20px;
 	height: 3px;
-	background: #9D93FB;
+	background: #54B9DC;
 	position: absolute;
 	left: 50%;
 	bottom: 0;
 }
 
 .contact-info-single p{
+	font-family: 'Outfit-Regular';
 	margin: 0;
 	position: relative;
 	z-index: 1;
@@ -955,15 +987,9 @@ header .navbar.sticky-header{
 	text-align: center;
 }
 
-.footer-logo h1{
-	font-family: 'Berkshire Swash', cursive;
-    font-weight: normal;
+.footer-logo h1 img{
+	width: 75px;
     transition: all 0.3s;
-    color: #fff;
-}
-
-.footer-logo h1 span{
-	color: #9D93FB;
 }
 
 .footer-about{
@@ -998,8 +1024,8 @@ header .navbar.sticky-header{
 
 .footer-social a:hover{
 	background: none;
-	border-color: #3854F2;
-	color: #3854F2;
+	border-color: #4A49FB;
+	color: #4A49FB;
 }
 
 /*********************************/
